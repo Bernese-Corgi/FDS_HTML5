@@ -1,12 +1,105 @@
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
-@import url(https://github.com/necolas/normalize.css/8.0.1/normalize.css);
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
 @import url(./fontello.css);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+html {
+  font-size: 10px;
+}
 
 body {
   font-family: 'Spoqa Han Sans', 'Sans-serif';
+  font-size: 1.4rem;
+  color: #181818;
+  background: #fff;
 }
 
-/* 스킵 내비게이션 */
+/* 스킵 네비게이션 */
+
 .skip-nav {
   display: none;
+}
+
+/* body {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+} */
+
+/* 레이아웃 */
+.header,
+.visual,
+.main,
+.slogan {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.header {
+  background: gold;
+}
+
+.visual {
+  background: yellowgreen;
+  height: 120px;
+}
+
+.main {
+  background: skyblue;
+  /* display: flex; */
+  /* flex-flow: row nowrap; */
+  /* justify-content: space-evenly; */
+  padding: 30px 15px;
+  /* height: 400px; */
+  overflow: hidden;
+  min-height: 450px;
+}
+
+/* 고전적인 방식 */
+/* .clearfix::after { */
+/* content: ""; */
+/** 빈상자 만든거랑 똑같음 **/
+/* clear: both; */
+/** 인라인은 이런 방식이 무시됨 **/
+/* display: block; */
+/* } */
+
+/* .clearfix {
+  clear: both;
+} */
+
+.group {
+  margin: 0 15px;
+  float: left;
+}
+
+.group1 {
+  background: blueviolet;
+  width: 250px;
+  /* float: left; */
+}
+
+.group2 {
+  background: lightgreen;
+  width: 380px;
+}
+
+.group3 {
+  background: tomato;
+  width: 190px;
+}
+
+.slogan {
+  background: salmon;
+}
+
+.footer {
+  background: gray;
+  width: 100%;
 }
