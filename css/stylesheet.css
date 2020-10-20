@@ -20,6 +20,12 @@ body {
   background: #fff;
 }
 
+/* 링크 스타일 */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 /* 스킵 네비게이션 */
 
 .skip-nav {
@@ -41,8 +47,41 @@ body {
   margin: 0 auto;
 }
 
+/* 헤더 */
 .header {
+  position: relative;
   background: gold;
+  border-radius: 0 0 15px 15px;
+  padding: 0 30px;
+}
+
+/* 로고 */
+.logo {
+  position: absolute;
+  margin: 0;
+  left: 65px;
+  top: 50px;
+}
+
+/* 안내링크 목록 */
+.member {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  text-align: right;
+}
+
+.member li {
+  display: inline-block;
+  /* 모양만 인라인이고 성격은 블록 */
+  /* li태그는 padding-left도 40px을 가진다 */
+  padding: 2px 0;
+}
+
+.member a {
+  padding: 6px 0;
+  display: inline-block;
+  background: lightcoral;
 }
 
 .visual {
