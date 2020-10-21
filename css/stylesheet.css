@@ -2,6 +2,16 @@
 @import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
 @import url(./fontello.css);
 
+/* 숨김 제목 및 숨김 컨텐츠 */
+.a11y-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  overflow: hidden;
+  clip-path: polygon(0 0, 0 0, 0 0);
+}
+
 *,
 *::before,
 *::after {
@@ -17,7 +27,7 @@ body {
   font-family: 'Spoqa Han Sans', 'Sans-serif';
   font-size: 1.4rem;
   color: #181818;
-  background: #fff;
+  background: #ccc;
 }
 
 /* 링크 스타일 */
@@ -50,7 +60,7 @@ a {
 /* 헤더 */
 .header {
   position: relative;
-  background: gold;
+  background: #fff;
   border-radius: 0 0 15px 15px;
   padding: 0 30px;
 }
@@ -81,8 +91,118 @@ a {
 .member a {
   padding: 6px 0;
   display: inline-block;
-  background: lightcoral;
 }
+
+/* 내비게이션 */
+.navigation {
+  padding-bottom: 80px;
+}
+
+.menu {
+  background: linear-gradient(to bottom,
+      #efaa4f 0%,
+      #fc8f41 16%,
+      #fc7a2f 32%,
+      #fc7a2f 65%,
+      #fc8f41 81%,
+      #efaa4f 100%);
+  border-top: 2px solid currentColor;
+  /* currentColor 현재 사용하는 컬러 그대로 사용 */
+  margin: 10px 0 0 0;
+  padding-left: 0;
+  list-style: none;
+  height: 47px;
+  border-radius: 0 0 5px 5px;
+  padding-left: 225px;
+}
+
+.menu-item {
+  position: relative;
+  float: left;
+}
+
+.menu-button {
+  cursor: pointer;
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: 700;
+  background: transparent;
+  line-height: 45px;
+  display: block;
+  padding: 0 20px;
+  border: 0;
+  border-left: 2px solid rgba(250, 250, 250, 0.6);
+  text-shadow: 1px 0 0 #181818,
+    0 1px 0 #181818,
+    -1px 0 #181818,
+    0 -1px 0 #181818;
+}
+
+.menu-act .menu-button {
+  color: #ff0;
+
+}
+
+.menu-act .menu-button::after {
+  content: "";
+  display: block;
+  border-top: 2px solid #000;
+}
+
+.sub-menu {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  position: absolute;
+  display: none;
+  top: 47px;
+  white-space: nowrap;
+}
+
+.sub-menu li {
+  display: inline-block;
+}
+
+.sub-menu a {
+  display: inline-block;
+  padding: 8px 0;
+  margin-right: 10px;
+  /* a태그의 클릭범위를 크게 주기 위함 */
+  /* background-color: skyblue; */
+}
+
+.sub-menu a::before {
+  content: '\f192';
+  font-family: 'fontello';
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+}
+
+.sub-menu a:hover::before,
+.sub-menu a:focus::before {
+  content: '\e800';
+
+}
+
+.menu-act .sub-menu {
+  /* display: block; */
+}
+
+.sub-menu1,
+.sub-menu2,
+.sub-menu3 {
+  left: 0;
+}
+
+.sub-menu4,
+.sub-menu5,
+.sub-menu6 {
+  right: 0;
+}
+
 
 .visual {
   background: yellowgreen;
