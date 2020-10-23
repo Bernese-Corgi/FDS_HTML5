@@ -272,7 +272,7 @@ a {
 }
 
 .main {
-  background: skyblue;
+  background: #fff;
   /* display: flex; */
   /* flex-flow: row nowrap; */
   /* justify-content: space-evenly; */
@@ -285,11 +285,11 @@ a {
 /* 고전적인 방식 */
 /* html파일에 <main class="main clearfix라고 주고 시작" */
 /* .clearfix::after { */
-/* content: ""; */
-/** 빈상자 만든거랑 똑같음 **/
-/* clear: both; */
-/** 인라인은 이런 방식이 무시됨 **/
-/* display: block; */
+/* content: "";
+* 빈상자 만든거랑 똑같음 *
+clear: both;
+* 인라인은 이런 방식이 무시됨 *
+display: block; */
 /* } */
 
 /* .clearfix {
@@ -302,10 +302,10 @@ a {
 }
 
 .group1 {
-  background: blueviolet;
+  /* background: blueviolet; */
   width: 250px;
-  height: 160px;
-  padding: 10px;
+  /* height: 160px;
+  padding: 10px; */
   /* float: left; */
 }
 
@@ -319,15 +319,100 @@ a {
   width: 190px;
 }
 
+/* 로그인 */
+.login {
+  background: radial-gradient(circle at right top, #efa22f, #ed702d);
+  border-radius: 5px;
+  box-shadow: 5px 5px 0 0 #cccccc;
+  padding: 15px 10px;
+}
+
 .login-heading {
+  margin: 0;
   color: #ff0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  /* 수정할때 h2->div로 바꿔버리면 h2의 기본특성 볼드체가 사라질 수 있으므로
+  만일을 대비해? font-weight를 준다 */
+  text-indent: 10px;
 }
 
 .login-form {
-  background-color: #fff;
+  margin-top: 10px;
+  padding: 10px 10px 0 10px;
+  background: #fff;
   border-radius: 5px 5px 0 0;
 }
 
+.login-form fieldset {
+  position: relative;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  padding: 0 0 10px 0;
+  margin: 0;
+}
+
+.user-email,
+.user-pw {
+  margin-bottom: 6px;
+}
+
+.user-email *,
+.user-pw * {
+  vertical-align: middle;
+}
+
+.login-form label {
+  width: 4em;
+  display: inline-block;
+}
+
+.login-form input {
+  width: 90px;
+  height: 22px;
+  border: 1px solid #ccc;
+  padding: 1px 1px 1px 0.5em;
+}
+
+.btn-login {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  padding: 0 5px;
+  border: 0;
+  border-radius: 3px;
+  background-color: #ed702d;
+  color: #fff;
+}
+
+.login-member {
+  background: #fff;
+  padding: 2px 10px;
+  margin: 0;
+  list-style: none;
+  border-radius: 0 0 5px 5px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  letter-spacing: -1px;
+}
+
+.login-member li {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.login-member .icon-right-open {
+  color: #ed702d;
+}
+
+.login-member a {
+  display: block;
+  padding: 8px 0;
+}
 
 .slogan {
   background: salmon;
