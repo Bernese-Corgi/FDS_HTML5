@@ -189,9 +189,9 @@ a {
 
 }
 
-.menu-act .sub-menu {
-  /* display: block; */
-}
+/* .menu-act .sub-menu {
+  display: block;
+} */
 
 .sub-menu1,
 .sub-menu2,
@@ -293,7 +293,7 @@ display: block; */
 /* } */
 
 /* .clearfix {
-  clear: both;
+clear: both;
 } */
 
 .group {
@@ -413,6 +413,29 @@ display: block; */
   display: block;
   padding: 8px 0;
 }
+
+.validation-list {
+  /* background-color: #ff0; */
+  margin: 25px 0 0 0;
+  list-style: none;
+  padding-left: 0;
+}
+
+.validation-list li {
+  margin-bottom: 10px;
+}
+
+.validation-list a {
+  padding: 10px 10px 10px 50px;
+  display: block;
+  background: url("images/validation_icon.png") no-repeat 15px 50%,
+    linear-gradient(to bottom, #ccc, #eee);
+  border: 1px solid #aaa;
+  border-radius: 30px;
+
+}
+
+.validation-list a:hover {}
 
 .slogan {
   background: salmon;
