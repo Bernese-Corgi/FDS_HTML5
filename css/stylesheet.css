@@ -435,7 +435,30 @@ clear: both;
 
 }
 
-.validation-list a:hover {}
+.validation-list a:hover,
+.validation-list a:focus {
+  color: red;
+  outline: 0;
+}
+
+.term {
+  position: relative;
+  width: 250px;
+  height: 140px;
+  margin-top: 20px;
+  padding: 10px;
+  background: linear-gradient(to bottom, #ccc, #eee);
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+.term-heading {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
 
 .slogan {
   background: salmon;
