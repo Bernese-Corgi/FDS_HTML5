@@ -21,7 +21,6 @@ legend {
   box-sizing: border-box;
 }
 
-
 html {
   font-size: 10px;
 }
@@ -135,9 +134,7 @@ a {
   padding: 0 20px;
   border: 0;
   border-left: 2px solid rgba(250, 250, 250, 0.6);
-  text-shadow: 1px 0 0 #181818,
-    0 1px 0 #181818,
-    -1px 0 #181818,
+  text-shadow: 1px 0 0 #181818, 0 1px 0 #181818, -1px 0 #181818,
     0 -1px 0 #181818;
 }
 
@@ -146,7 +143,7 @@ a {
 }
 
 .menu-act .menu-button::after {
-  content: "";
+  content: '';
   display: block;
   border-top: 2px solid #000;
 }
@@ -179,14 +176,13 @@ a {
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
-  margin-right: .2em;
+  margin-right: 0.2em;
   text-align: center;
 }
 
 .sub-menu a:hover::before,
 .sub-menu a:focus::before {
   content: '\e800';
-
 }
 
 /* .menu-act .sub-menu {
@@ -237,7 +233,7 @@ a {
 
 .visual::before,
 .visual::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -428,11 +424,10 @@ clear: both;
 .validation-list a {
   padding: 10px 10px 10px 50px;
   display: block;
-  background: url("images/validation_icon.png") no-repeat 15px 50%,
+  background: url('images/validation_icon.png') no-repeat 15px 50%,
     linear-gradient(to bottom, #ccc, #eee);
   border: 1px solid #aaa;
   border-radius: 30px;
-
 }
 
 .validation-list a:hover,
@@ -441,25 +436,153 @@ clear: both;
   outline: 0;
 }
 
+/* 웹 관련 용어 */
 .term {
-  position: relative;
   width: 250px;
-  height: 140px;
-  margin-top: 20px;
-  padding: 10px;
-  background: linear-gradient(to bottom, #ccc, #eee);
+  padding: 15px;
   border: 1px solid #aaa;
   border-radius: 5px;
+  background: linear-gradient(#ccc, #eee);
 }
 
 .term-heading {
-  margin: 0;
-  padding: 0;
-  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.6rem;
   font-weight: 700;
 }
 
+.term-list {
+  margin: 15px 0 0 0;
+}
 
+.term-list>div {
+  overflow: hidden;
+}
+
+.term-list div:nth-child(even) {
+  margin-top: 15px;
+}
+
+.term-list-subject,
+.term-list-brief {
+  float: right;
+  width: 145px;
+}
+
+.term-list-subject {
+  color: #296897;
+}
+
+.term-list-thumbnail {
+  float: left;
+}
+
+.term-list-thumbnail img {
+  display: block;
+}
+
+.term-list-brief {
+  margin-top: 5px;
+  line-height: 1.5;
+}
+
+.term-list dd {
+  margin-left: 0;
+}
+
+.term-list div:nth-child(even) .term-list-subject,
+.term-list div:nth-child(even) .term-list-brief {
+  float: left;
+}
+
+.term-list div:nth-child(even) .term-list-thumbnail {
+  float: right;
+}
+
+/* odd, even 클래스 있을때. */
+
+/* .odd,
+.even {
+  overflow: hidden;
+  background-color: skyblue;
+}
+
+.even {
+  margin-top: 15px;
+}
+
+.term-list {
+  margin: 15px 0 0 0;
+  background: yellow;
+}
+.term-list-subject,
+.term-list-brief {
+  background: pink;
+  float: right;
+  width: 145px;
+}
+.term-list-subject {
+  color: #296897;
+}
+.term-list-thumbnail {
+  background-color: lime;
+  float: left;
+}
+
+.term-list-thumbnail img {
+  display: block;
+}
+
+.term-list-brief {
+  background-color: orange;
+  margin-top: 5px;
+}
+.term-list dd {
+  margin: 0;
+}
+
+.even .term-list-subject,
+.even .term-list-brief {
+  float: left;
+}
+
+.even .term-list-thumbnail {
+  float: right;
+} */
+
+/* .odd .term-list-subject,
+.even .term-list-subject {
+  color: #296897;
+  display: inline-block;
+  margin-bottom: 10px;
+} */
+/* float로 해보기 */
+/* .odd .term-list-thumbnail {
+  float: left;
+  margin-right: 15px;
+}
+
+.even .term-list-thumbnail {
+  float: right;
+  margin-left: 15px;
+} */
+
+/* d-flex로 해보기 */
+/* .odd,
+.even {
+  display: flex;
+  flex-flow: column wrap;
+}
+.odd .term-list-thumbnail {
+  margin-right: 15px;
+  order: -1;
+}
+
+.even .term-list-thumbnail {
+  float: right;
+  margin-left: 15px;
+} */
 .slogan {
   background: salmon;
 }
