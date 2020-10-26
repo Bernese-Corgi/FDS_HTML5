@@ -306,7 +306,7 @@ clear: both;
 }
 
 .group2 {
-  background: lightgreen;
+  /* background: lightgreen; */
   width: 380px;
 }
 
@@ -583,6 +583,85 @@ clear: both;
   float: right;
   margin-left: 15px;
 } */
+
+/* 검색 폼 */
+
+.search-form {
+  background: #ccc linear-gradient(#ccc, #eee);
+  border: 1px solid #aaa;
+  border-bottom-color: #fff;
+  border-radius: 15px 15px 0 0;
+  padding: 15px 25px 10px;
+}
+
+.search-form-container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-form fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.search-form [name="search"] {
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  padding: 1px 1px 1px 0.5em;
+  /* flex-grow: 1; */
+  height: 22px;
+  width: 190px;
+  /* margin: 0 5px; */
+}
+
+.btn-search {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  height: 22px;
+  padding: 0 10px;
+}
+
+
+
+/* .search-form {
+  padding: 15px 0 10px 0;
+  background-color: #ff0;
+  background: linear-gradient(#ccc, #eee);
+  border: 1px solid #aaa;
+  border-bottom: none;
+  border-radius: 5px 5px 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+.search-form fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.search-form label {
+  margin: 0;
+  padding: 0;
+}
+
+.search-form input {
+  width: 200px;
+  height: 25px;
+}
+
+.btn-search {
+  width: 40px;
+  height: 25px;
+} */
+
 .slogan {
   background: salmon;
 }
