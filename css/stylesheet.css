@@ -667,8 +667,8 @@ clear: both;
 } */
 
 .board {
-  background: gold;
-  height: 200px;
+  /* background: gold; */
+  /* height: 200px; */
   position: relative;
   margin-top: 20px;
 }
@@ -687,6 +687,10 @@ clear: both;
   display: block;
 }
 
+.is-active .tab {
+  z-index: 5;
+}
+
 .notice-more,
 .pds-more {
   /* 디폴트값을 꾸미기로 두는것 */
@@ -695,7 +699,7 @@ clear: both;
   right: -8px;
   padding: 8px;
   /* 클릭 구간을 조금 더 넓게 줄 수 있다 */
-  background: burlywood;
+  /* background: burlywood; */
   font-size: 12px;
 }
 
@@ -704,22 +708,22 @@ clear: both;
   color: hsla(110, 50%, 30%, 1);
 }
 
-.notice-list,
-.pds-list {
-  /* agent style 제거 */
-  width: 100%;
-  padding-left: 0;
-  margin: 0;
-  background-color: salmon;
-  position: absolute;
-  left: 0;
-  top: 45px;
-}
 
 .tab {
-  float: left;
+  /* float: left; */
   margin-top: 0;
   margin-bottom: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.notice-heading {
+  left: 0;
+}
+
+.pds-heading {
+  left: 83px;
 }
 
 .tab a {
@@ -731,7 +735,7 @@ clear: both;
   color: #999;
   font-size: 1.4rem;
   font-weight: 400;
-  padding: 10px;
+  padding: 5px 15px;
 }
 
 .is-active .tab a {
@@ -741,14 +745,27 @@ clear: both;
   background: #fff;
 }
 
+.notice-list,
+.pds-list {
+  /* agent style 제거 */
+  width: 100%;
+  padding-left: 0;
+  margin: 0;
+  /* background-color: salmon; */
+  padding-top: 45px;
+  min-height: 170px;
+  /* position: absolute;
+  left: 0;
+  top: 45px; */
+}
+
 .notice-list li,
 .pds-list li {
-  background-color: skyblue;
+  /* background-color: skyblue; */
   display: flex;
   flex-flow: row nowrap;
   margin-bottom: 10px;
 }
-
 
 .notice-list a,
 .pds-list a {
@@ -756,15 +773,14 @@ clear: both;
   white-space: nowrap;
   overflow: hidden;
   width: 300px;
-  background-color: pink;
+  /* background-color: pink; */
 }
 
-.notice-list li::before,
+/* .notice-list li::before,
 .pds-list li::before {
   content: '\f192';
   font-family: 'fontello';
-}
-
+} */
 
 
 
