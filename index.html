@@ -283,7 +283,7 @@
           <ul class="pds-list">
             <li>
               <a href="#">디자인 사이트 링크 모음</a>
-              <time datetime="2020-10-28T14:38:56">2020.10.27</time>
+              <time datetime="2020-10-28T14:38:56" +>2020.10.27</time>
             </li>
             <li>
               <a href="#">웹 접근성 관련 자료 모음</a>
@@ -305,26 +305,33 @@
           <a href="#" class="pds-more icon-plus" aria-labelledby="pdsHeading" title="자료실">더보기</a>
         </section>
       </div>
+
+
       <section class="news">
-        <h2 class="news-heading">새소식</h2>
-        <a href="#" class="news-link">
-          <article class="news-item">
-            <h3 class="news-item-heading">W3C 사이트가 리뉴얼 되었습니다.</h3>
-            <time class="news-item-date" datetime="2018-05-31T16:19:23">2018.05.31</time>
-            <p class="news-item-brief">
+        <h2 class="news-heading" id="newsHeading">새소식</h2>
+        <article class="news-article">
+          <a href="#" class="news-article-link">
+            <h3 class="news-article-subject">
+              W3C 사이트가 리뉴얼 되었습니다
+            </h3>
+            <time class="news-article-date" datetime="2020-10-27T14:20:29">
+              2020.10.28
+            </time>
+            <p class="news-article-brief">
               디자인 및 다양한 view 환경을 고려하여 구성되어 있으며,
               기존보다 최신 정보 및 개발자를 위한 기술 가이드도
               찾기 쉽도록 구성되어 있습니다.
             </p>
-            <figure class="news-item-thumbnail">
-              <img src="images/news.gif" alt="W3C 사이트가 HTML 발표 후 새롭게 리뉴얼 된 모습">
-              <figcaption>W3C 리뉴얼</figcaption>
+            <figure class="news-article-thumbnail">
+              <img src="./images/news.gif" alt="">
+              <figcaption id="newsArticleThumbnail">
+                W3C 리뉴얼
+              </figcaption>
             </figure>
-          </article>
-        </a>
-        <a href="#" class="icon-plus news-more" title="새소식">더보기</a>
+          </a>
+        </article>
+        <a href="#" class="icon-plus news-more" title="새소식" aria-labelledby="newsHeading">더보기</a>
       </section>
-
     </div>
 
 
