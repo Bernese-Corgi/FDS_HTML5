@@ -796,8 +796,8 @@ clear: both;
   top: 35px;
   left: 0;
   width: 100%;
-  height: 10px;
-  background: #ccc linear-gradient(to right, #ccc. #fff);
+  height: 1px;
+  background: #ccc linear-gradient(to right, #ccc, #fff);
 }
 
 .news-heading {
