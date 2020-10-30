@@ -29,7 +29,7 @@ body {
   font-family: 'Spoqa Han Sans', 'Sans-serif';
   font-size: 1.4rem;
   color: #181818;
-  background: #ccc;
+  background: #ccc linear-gradient(#ccc 0%, #eee 35%, #fff 60%, #fff 100%);
 }
 
 /* 링크 스타일 */
@@ -56,9 +56,7 @@ a {
 .main,
 .slogan {
   width: 940px;
-  margin-right: 5px;
-
-  flex-grow: 1;
+  margin: 0 auto;
 }
 
 /* 헤더 */
@@ -103,15 +101,13 @@ a {
 }
 
 .menu {
-  background: linear-gradient(
-    to bottom,
-    #efaa4f 0%,
-    #fc8f41 16%,
-    #fc7a2f 32%,
-    #fc7a2f 65%,
-    #fc8f41 81%,
-    #efaa4f 100%
-  );
+  background: linear-gradient(to bottom,
+      #efaa4f 0%,
+      #fc8f41 16%,
+      #fc7a2f 32%,
+      #fc7a2f 65%,
+      #fc8f41 81%,
+      #efaa4f 100%);
   border-top: 2px solid currentColor;
   /* currentColor 현재 사용하는 컬러 그대로 사용 */
   margin: 10px 0 0 0;
@@ -464,7 +460,7 @@ clear: both;
   margin: 15px 0 0 0;
 }
 
-.term-list > div {
+.term-list>div {
   overflow: hidden;
 }
 
@@ -948,6 +944,7 @@ clear: both;
   height: 18px;
   background: transparent url(./images/back_forward.png) 0 0 no-repeat;
 }
+
 /* .btn-prev,
 .btn-next {
 padding: 18px 0 0 0;
@@ -979,6 +976,7 @@ overflow: hidden;
 .related-list li {
   padding: 3px 5px 2px 5px;
 }
+
 .related-list a {
   display: block;
   line-height: 20px;
@@ -1033,6 +1031,7 @@ overflow: hidden;
   /* top: 50%;
   margin-top: -9px; */
 }
+
 /* .favorite-list li:nth-child(1)::before {
         content: '1';
       }
@@ -1102,10 +1101,53 @@ overflow: hidden;
 }
 
 .slogan {
-  background: salmon;
+  /* background: salmon; */
+  position: relative;
+  padding: 0 70px 15px 180px;
+}
+
+.slogan-heading {
+  margin: 0;
+  width: 110px;
+  height: 83px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 83px;
+  text-align: center;
+  background: url(./images/coffee.png) no-repeat 0 0;
+  position: absolute;
+  left: 35px;
+  bottom: -25px;
+}
+
+.slogan-heading::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url(./images/coffee.png) no-repeat 0 0;
+}
+
+.slogan-brief {
+  /* background: skyblue; */
+  margin: 0;
+  color: #a09784;
+}
+
+.slogan-brief q::before {
+  font-size: 3.5rem;
+  position: relative;
+  top: 10px;
+}
+
+.slogan-brief q::after {
+  content: " ";
 }
 
 .footer {
-  background: gray;
+  /* background: gray; */
   width: 100%;
+  background: #ccc linear-gradient(#ccc 0%, #eee 35%, #fff 60%, #fff 100%);
 }
