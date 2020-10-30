@@ -1002,19 +1002,20 @@ overflow: hidden;
 }
 
 .favorite-list {
-  background-color: gold;
+  /* background-color: gold; */
   margin: 10px 0 0 0;
   padding: 0;
   overflow: hidden;
 }
 
 .favorite-list li {
-  background-color: pink;
-  margin-bottom: 5px;
+  /* background-color: pink; */
+  margin-bottom: 8px;
   counter-increment: number;
-  display: flex;
+  /* display: flex;
   flex-flow: row nowrap;
-  align-items: center;
+  align-items: center; */
+  position: relative;
 }
 
 .favorite-list li::before {
@@ -1026,6 +1027,11 @@ overflow: hidden;
   margin-right: 5px;
   background-color: #999999;
   border-radius: 2px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* top: 50%;
+  margin-top: -9px; */
 }
 /* .favorite-list li:nth-child(1)::before {
         content: '1';
@@ -1044,16 +1050,19 @@ overflow: hidden;
       } */
 
 .favorite-list a {
-  background-color: aqua;
-  margin-right: 5px;
-  flex-grow: 1;
+  /* background-color: aqua; */
+  display: block;
+  margin: 0 10px 0 20px;
+  /* font-size: 20px; */
+  /* margin-right: 5px;
+  flex-grow: 1; */
 }
 
 .up,
 .down,
 .stop {
-  background: yellowgreen;
-  display: inline-block;
+  /* background: yellowgreen; */
+  /* display: inline-block; */
   width: 9px;
   height: 0;
   overflow: hidden;
@@ -1062,6 +1071,10 @@ overflow: hidden;
   margin-top: 2px; */
   background: url(./images/rank.png) no-repeat;
   /* float: right; */
+  position: absolute;
+  top: 50%;
+  margin-top: -5px;
+  right: 0;
 }
 
 .up {
